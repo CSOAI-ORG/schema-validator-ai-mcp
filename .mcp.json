@@ -1,0 +1,23 @@
+{
+  "name": "schema-validator-ai-mcp",
+  "description": "MEOK AI Labs \u2014 JSON Schema validation and generation tools powered by MEOK AI Labs.",
+  "vendor": "MEOK AI Labs",
+  "homepage": "https://meok.ai",
+  "repository": "https://github.com/CSOAI-ORG/schema-validator-ai-mcp",
+  "runtime": "python",
+  "entrypoint": "server.py",
+  "tools": [
+    "validate_json_schema",
+    "generate_schema",
+    "convert_openapi",
+    "validate_types"
+  ],
+  "categories": [
+    "Developer Tools",
+    "Validation"
+  ],
+  "pricing": {
+    "free": "50 calls/day",
+    "pro": "$9/mo"
+  }
+}
