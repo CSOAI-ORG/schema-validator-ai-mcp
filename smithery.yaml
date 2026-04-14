@@ -1,10 +1,41 @@
 name: schema-validator-ai-mcp
-description: "MEOK AI Labs — JSON Schema validation and generation tools powered by MEOK AI Labs."
-vendor: MEOK AI Labs
-homepage: https://meok.ai
-repository: https://github.com/CSOAI-ORG/schema-validator-ai-mcp
-license: MIT
-categories: [Developer Tools, Validation]
-tags: [schema-validation, json-schema, data-validation, api-schema, openapi]
-runtime: python
-entrypoint: server.py
+description: JSON Schema validation, schema generation, OpenAPI extraction, and type
+  checking.
+version: 1.0.0
+tools:
+- name: validate_json_schema
+  description: Validate JSON data against a JSON Schema.
+  parameters:
+  - name: data_json
+    type: string
+    required: true
+  - name: schema_json
+    type: string
+    required: true
+- name: generate_schema
+  description: Generate a JSON Schema from example JSON data.
+  parameters:
+  - name: data_json
+    type: string
+    required: true
+  - name: title
+    type: string
+    required: false
+- name: convert_openapi
+  description: Extract and convert schemas from an OpenAPI specification.
+  parameters:
+  - name: openapi_json
+    type: string
+    required: true
+  - name: extract_schemas
+    type: boolean
+    required: false
+- name: validate_types
+  description: Validate that JSON data fields match expected types.
+  parameters:
+  - name: data_json
+    type: string
+    required: true
+  - name: type_spec
+    type: object
+    required: true

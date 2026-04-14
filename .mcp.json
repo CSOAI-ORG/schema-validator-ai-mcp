@@ -1,23 +1,81 @@
 {
   "name": "schema-validator-ai-mcp",
-  "description": "MEOK AI Labs \u2014 JSON Schema validation and generation tools powered by MEOK AI Labs.",
-  "vendor": "MEOK AI Labs",
-  "homepage": "https://meok.ai",
-  "repository": "https://github.com/CSOAI-ORG/schema-validator-ai-mcp",
-  "runtime": "python",
-  "entrypoint": "server.py",
+  "description": "JSON Schema validation, schema generation, OpenAPI extraction, and type checking.",
+  "version": "1.0.0",
   "tools": [
-    "validate_json_schema",
-    "generate_schema",
-    "convert_openapi",
-    "validate_types"
-  ],
-  "categories": [
-    "Developer Tools",
-    "Validation"
-  ],
-  "pricing": {
-    "free": "50 calls/day",
-    "pro": "$9/mo"
-  }
+    {
+      "name": "validate_json_schema",
+      "description": "Validate JSON data against a JSON Schema.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "data_json": {
+            "type": "string"
+          },
+          "schema_json": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "data_json",
+          "schema_json"
+        ]
+      }
+    },
+    {
+      "name": "generate_schema",
+      "description": "Generate a JSON Schema from example JSON data.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "data_json": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "data_json"
+        ]
+      }
+    },
+    {
+      "name": "convert_openapi",
+      "description": "Extract and convert schemas from an OpenAPI specification.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "openapi_json": {
+            "type": "string"
+          },
+          "extract_schemas": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "openapi_json"
+        ]
+      }
+    },
+    {
+      "name": "validate_types",
+      "description": "Validate that JSON data fields match expected types.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "data_json": {
+            "type": "string"
+          },
+          "type_spec": {
+            "type": "object"
+          }
+        },
+        "required": [
+          "data_json",
+          "type_spec"
+        ]
+      }
+    }
+  ]
 }
