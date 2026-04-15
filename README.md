@@ -1,24 +1,66 @@
-# Schema Validator AI MCP Server
+# Schema Validator Ai
 
-JSON Schema validation, schema generation, OpenAPI extraction, and type checking.
+> By [MEOK AI Labs](https://meok.ai) — MEOK AI Labs MCP Server
+
+Schema Validator AI MCP Server
+
+## Installation
+
+```bash
+pip install schema-validator-ai-mcp
+```
+
+## Usage
+
+```bash
+# Run standalone
+python server.py
+
+# Or via MCP
+mcp install schema-validator-ai-mcp
+```
 
 ## Tools
 
-- **validate_json_schema**
-- **generate_schema**
-- **convert_openapi**
-- **validate_types**
+### `validate_json_schema`
+Validate JSON data against a JSON Schema.
 
-## Quick Start
+**Parameters:**
+- `data_json` (str)
+- `schema_json` (str)
 
-```bash
-pip install mcp
-python server.py
-```
+### `generate_schema`
+Generate a JSON Schema from example JSON data.
 
-## Rate Limits
+**Parameters:**
+- `data_json` (str)
+- `title` (str)
 
-- Free tier: 50 calls/day per tool
-- Upgrade: https://meok.ai/pricing
+### `convert_openapi`
+Extract and convert schemas from an OpenAPI specification.
 
-Built by [MEOK AI Labs](https://meok.ai)
+**Parameters:**
+- `openapi_json` (str)
+- `extract_schemas` (bool)
+
+### `validate_types`
+Validate that JSON data fields match expected types.
+
+**Parameters:**
+- `data_json` (str)
+- `type_spec` (str)
+
+
+## Authentication
+
+Free tier: 15 calls/day. Upgrade at [meok.ai/pricing](https://meok.ai/pricing) for unlimited access.
+
+## Links
+
+- **Website**: [meok.ai](https://meok.ai)
+- **GitHub**: [CSOAI-ORG/schema-validator-ai-mcp](https://github.com/CSOAI-ORG/schema-validator-ai-mcp)
+- **PyPI**: [pypi.org/project/schema-validator-ai-mcp](https://pypi.org/project/schema-validator-ai-mcp/)
+
+## License
+
+MIT — MEOK AI Labs
