@@ -1,5 +1,6 @@
 name: schema-validator-ai-mcp
-description: MEOK AI Labs MCP Server
+description: Schema Validator Ai automation via MCP. Includes validate json schema,
+  generate schema, convert openapi. By MEOK AI Labs.
 version: 1.0.0
 tools:
 - name: validate_json_schema

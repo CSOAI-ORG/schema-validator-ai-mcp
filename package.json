@@ -1,7 +1,7 @@
 {
   "name": "schema-validator-ai-mcp",
   "version": "1.0.0",
-  "description": "MEOK AI Labs — schema validator MCP Server",
+  "description": "Schema Validator Ai automation via MCP. Includes validate json schema, generate schema, convert openapi. By MEOK AI Labs.",
   "main": "server.py",
   "mcp": {
     "name": "schema validator",
@@ -9,10 +9,22 @@
     "homepage": "https://meok.ai",
     "repository": "https://github.com/CSOAI-ORG/schema-validator-ai-mcp",
     "runtime": "python",
-    "tags": ["mcp", "mcp-server", "meok-ai-labs", "ai-tools"]
+    "tags": [
+      "mcp",
+      "mcp-server",
+      "meok-ai-labs",
+      "ai-tools"
+    ]
   },
-  "keywords": ["mcp", "mcp-server", "meok-ai-labs"],
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "meok-ai-labs"
+  ],
   "author": "MEOK AI Labs <nicholas@meok.ai>",
   "license": "MIT",
-  "repository": {"type": "git", "url": "https://github.com/CSOAI-ORG/schema-validator-ai-mcp"}
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CSOAI-ORG/schema-validator-ai-mcp"
+  }
 }
