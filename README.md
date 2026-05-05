@@ -1,66 +1,38 @@
-# Schema Validator Ai
+<div align="center">
 
-> By [MEOK AI Labs](https://meok.ai) — MEOK AI Labs MCP Server
+[![GitHub stars](https://img.shields.io/github/stars/CSOAI-ORG/schema-validator-ai-mcp)](https://github.com/CSOAI-ORG/schema-validator-ai-mcp/stargazers)
 
-Schema Validator AI MCP Server
+# uschemaU validatorU aiU mcp
+
+**Schema Validator AI MCP Server**
+
+[![npm version](https://img.shields.io/npm/v/@meok-ai/schema-validator-ai-mcp)](https://www.npmjs.com/package/@meok-ai/schema-validator-ai-mcp)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![MEOK AI Labs](https://img.shields.io/badge/MEOK_AI_Labs-255+_servers-purple)](https://meok.ai)
+
+[Installation](#installation) · [Docs](https://csoai.org) · [Report Bug](https://github.com/CSOAI-ORG/schema-validator-ai-mcp/issues)
+
+</div>
+
+---
 
 ## Installation
 
 ```bash
 pip install schema-validator-ai-mcp
+# or
+npm install -g @meok-ai/schema-validator-ai-mcp
 ```
 
-## Usage
+## Quick Start
 
-```bash
-# Run standalone
-python server.py
+See the project repository for full documentation and examples.
 
-# Or via MCP
-mcp install schema-validator-ai-mcp
-```
+## Enterprise Support
 
-## Tools
-
-### `validate_json_schema`
-Validate JSON data against a JSON Schema.
-
-**Parameters:**
-- `data_json` (str)
-- `schema_json` (str)
-
-### `generate_schema`
-Generate a JSON Schema from example JSON data.
-
-**Parameters:**
-- `data_json` (str)
-- `title` (str)
-
-### `convert_openapi`
-Extract and convert schemas from an OpenAPI specification.
-
-**Parameters:**
-- `openapi_json` (str)
-- `extract_schemas` (bool)
-
-### `validate_types`
-Validate that JSON data fields match expected types.
-
-**Parameters:**
-- `data_json` (str)
-- `type_spec` (str)
-
-
-## Authentication
-
-Free tier: 15 calls/day. Upgrade at [meok.ai/pricing](https://meok.ai/pricing) for unlimited access.
-
-## Links
-
-- **Website**: [meok.ai](https://meok.ai)
-- **GitHub**: [CSOAI-ORG/schema-validator-ai-mcp](https://github.com/CSOAI-ORG/schema-validator-ai-mcp)
-- **PyPI**: [pypi.org/project/schema-validator-ai-mcp](https://pypi.org/project/schema-validator-ai-mcp/)
+- 📧 nicholas@csoai.org
+- 🌐 [CSOAI.org](https://csoai.org)
 
 ## License
 
-MIT — MEOK AI Labs
+MIT © [CSOAI](https://csoai.org)
