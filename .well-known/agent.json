@@ -1,0 +1,59 @@
+{
+  "name": "schema-validator-ai-mcp",
+  "description": "Schema Validator Ai MCP Server by MEOK AI Labs",
+  "url": "https://proofof.ai/scorecard/schema-validator-ai-mcp.html",
+  "version": "1.0.6",
+  "protocolVersion": "0.2.0",
+  "provider": {
+    "organization": "MEOK AI Labs",
+    "url": "https://meok.ai"
+  },
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false
+  },
+  "defaultInputModes": [
+    "text"
+  ],
+  "defaultOutputModes": [
+    "text"
+  ],
+  "skills": [
+    {
+      "id": "validate_json_schema",
+      "name": "Validate Json Schema",
+      "description": "validate_json_schema via schema-validator-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "generate_schema",
+      "name": "Generate Schema",
+      "description": "generate_schema via schema-validator-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "convert_openapi",
+      "name": "Convert Openapi",
+      "description": "convert_openapi via schema-validator-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "validate_types",
+      "name": "Validate Types",
+      "description": "validate_types via schema-validator-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    }
+  ]
+}

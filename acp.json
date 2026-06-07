@@ -1,0 +1,22 @@
+{
+  "acpVersion": "0.1",
+  "agent": {
+    "name": "schema-validator-ai-mcp",
+    "description": "Schema Validator Ai MCP Server by MEOK AI Labs",
+    "version": "1.0.6",
+    "provider": "MEOK AI Labs",
+    "interfaces": [
+      {
+        "type": "mcp",
+        "transport": "stdio",
+        "package": "schema-validator-ai-mcp"
+      }
+    ],
+    "capabilities": [
+      "validate_json_schema",
+      "generate_schema",
+      "convert_openapi",
+      "validate_types"
+    ]
+  }
+}
