@@ -5,7 +5,6 @@ JSON Schema validation and generation tools powered by MEOK AI Labs.
 
 
 import sys, os
-sys.path.insert(0, os.path.expanduser('~/clawd/meok-labs-engine/shared'))
 from auth_middleware import check_access
 
 import json
@@ -26,7 +25,7 @@ def _check_rate_limit(tool_name: str) -> None:
     now = time.time()
     _call_counts[tool_name] = [t for t in _call_counts[tool_name] if now - t < WINDOW]
     if len(_call_counts[tool_name]) >= FREE_TIER_LIMIT:
-        raise ValueError(f"Rate limit exceeded for {tool_name}. Free tier: {FREE_TIER_LIMIT}/day. Upgrade at https://meok.ai/pricing")
+        raise ValueError(f"Rate limit exceeded for {tool_name}. Free tier: {FREE_TIER_LIMIT}/day. Upgrade at https://councilof.ai")
     _call_counts[tool_name].append(now)
 
 
@@ -146,7 +145,7 @@ def validate_json_schema(data_json: str, schema_json: str, api_key: str = "") ->
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+        return {"error": msg, "upgrade_url": "https://councilof.ai"}
 
     _check_rate_limit("validate_json_schema")
     try:
@@ -196,7 +195,7 @@ def generate_schema(data_json: str, title: str = "", api_key: str = "") -> dict:
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+        return {"error": msg, "upgrade_url": "https://councilof.ai"}
 
     _check_rate_limit("generate_schema")
     try:
@@ -249,7 +248,7 @@ def convert_openapi(openapi_json: str, extract_schemas: bool = True, api_key: st
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+        return {"error": msg, "upgrade_url": "https://councilof.ai"}
 
     _check_rate_limit("convert_openapi")
     try:
@@ -299,7 +298,7 @@ def validate_types(data_json: str, type_spec: dict, api_key: str = "") -> dict:
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+        return {"error": msg, "upgrade_url": "https://councilof.ai"}
 
     _check_rate_limit("validate_types")
     try:
@@ -327,5 +326,8 @@ def validate_types(data_json: str, type_spec: dict, api_key: str = "") -> dict:
     return {"valid": len(errors) == 0, "errors": errors, "fields_checked": len(type_spec)}
 
 
-if __name__ == "__main__":
+def main():
     mcp.run()
+
+if __name__ == '__main__':
+    main()

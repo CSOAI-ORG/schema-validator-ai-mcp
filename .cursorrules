@@ -1,0 +1,9 @@
+# schema-validator-ai-mcp - Auto-trigger Rules
+
+When the user asks about schema validator, use schema-validator-ai-mcp tools: validate_json_schema, generate_schema, convert_openapi, validate_types
+
+**Schema Validator AI MCP Server**
+
+Install: `pip install schema-validator-ai-mcp`
+
+By MEOK AI Labs — MIT licensed.

@@ -1,0 +1,25 @@
+{
+  "name": "schema-validator-ai-mcp",
+  "title": "Schema Validator Ai Mcp",
+  "description": "Schema Validator Ai automation via MCP. Includes validate json schema, generate schema, convert openapi. By MEOK AI Labs.",
+  "version": "1.0.6",
+  "homepage": "https://meok.ai",
+  "license": "MIT",
+  "transport": {
+    "type": "stdio"
+  },
+  "tools": [
+    {
+      "name": "validate_json_schema"
+    },
+    {
+      "name": "generate_schema"
+    },
+    {
+      "name": "convert_openapi"
+    },
+    {
+      "name": "validate_types"
+    }
+  ]
+}

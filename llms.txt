@@ -1,0 +1,33 @@
+# schema-validator-ai-mcp
+# **Schema Validator AI MCP Server**
+
+## Install
+```bash
+pip install schema-validator-ai-mcp
+```
+
+## Auth & Rate Limits
+- Free tier: 10 calls/day. No API key required.
+- Pro tier (£79/mo): unlimited + signed attestations.
+- Enterprise (£1,499/mo): white-label.
+
+## Tools
+
+### `validate_json_schema`
+Validate JSON data against a JSON Schema.
+
+### `generate_schema`
+Generate a JSON Schema from example JSON data.
+
+### `convert_openapi`
+Extract and convert schemas from an OpenAPI specification.
+
+### `validate_types`
+Validate that JSON data fields match expected types.
+
+
+## Maintainer
+MEOK AI Labs · hello@meok.ai · https://meok.ai · MIT licensed
+
+## Pairs with
+Governance moat: pair this tool with any of MEOK's 38 governance MCPs (EU AI Act, DORA, NIS2, CRA, GDPR, ISO 42001, etc.) for full compliance coverage.
