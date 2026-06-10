@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 [project]
 name = "schema-validator-ai-mcp"
-version = "1.0.6"
+version = "1.0.7"
 readme = "README.md"
 description = "Schema Validator Ai automation via MCP. Includes validate json schema, generate schema, convert openapi. By MEOK AI Labs."
 license = {file = "LICENSE"}
