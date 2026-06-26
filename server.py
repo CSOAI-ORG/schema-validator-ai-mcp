@@ -1,4 +1,6 @@
 """
+Buy Pro: https://www.csoai.org/checkout
+
 Schema Validator AI MCP Server
 JSON Schema validation and generation tools powered by MEOK AI Labs.
 """
